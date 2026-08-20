@@ -11,7 +11,8 @@ export default function Home() {
         <nav aria-label="Navegação principal">
           <a href="#sobre">Sobre</a>
           <a href="#atendimento">Atendimento</a>
-          <a href="#contato">Contato</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#duvidas">Dúvidas</a>
         </nav>
         <a className="header-cta" href="#pre-contato">Fale comigo</a>
       </header>
@@ -140,6 +141,37 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="journey section-shell" id="como-funciona" aria-labelledby="journey-title">
+        <div className="journey-heading">
+          <p className="section-kicker">Como funciona</p>
+          <h2 id="journey-title">Um primeiro passo de cada vez.</h2>
+          <p>O início é simples e cuidadoso, para que a família saiba o que esperar em cada etapa.</p>
+        </div>
+        <div className="journey-steps">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Primeiro contato</h3>
+              <p>Você responde a um formulário breve e a mensagem organizada é aberta diretamente no WhatsApp.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Conversa inicial</h3>
+              <p>A Paola conhece a necessidade da criança ou do adolescente e orienta sobre formato, disponibilidade e próximos passos.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Início do acompanhamento</h3>
+              <p>O cuidado é construído de forma individual, com participação dos responsáveis quando for indicada.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="formats section-shell" aria-labelledby="formats-title">
         <div className="formats-heading">
           <p className="section-kicker">Modalidades</p>
@@ -170,10 +202,13 @@ export default function Home() {
             </p>
           </div>
           <PreContactForm />
+          <aside className="emergency-note" aria-label="Aviso sobre urgências">
+            <strong>Importante:</strong> este site e o WhatsApp não são canais de urgência ou emergência. Em uma situação de risco imediato, procure o serviço de emergência da sua região.
+          </aside>
         </div>
       </section>
 
-      <section className="faq section-shell" aria-labelledby="faq-title">
+      <section className="faq section-shell" id="duvidas" aria-labelledby="faq-title">
         <div className="faq-heading">
           <p className="section-kicker">Dúvidas frequentes</p>
           <h2 id="faq-title">Antes de começar, é natural ter perguntas.</h2>
@@ -233,8 +268,16 @@ export default function Home() {
           <Image src="/paola/logo-paola.png" alt="Paola Milani Psicóloga" width={2001} height={599} />
         </a>
         <p>Psicologia infantojuvenil • Atendimento presencial e on-line</p>
-        <a href="#inicio">Voltar ao início ↑</a>
+        <div className="footer-links">
+          <a href="/privacidade">Privacidade</a>
+          <a href="#inicio">Voltar ao início ↑</a>
+        </div>
       </footer>
+
+      <a className="floating-contact" href="#pre-contato" aria-label="Iniciar primeiro contato com Paola Milani">
+        <Image src="/paola/borboleta-clara.png" alt="" width={731} height={781} aria-hidden="true" />
+        <span>Falar com a Paola</span>
+      </a>
     </main>
   );
 }

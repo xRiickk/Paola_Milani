@@ -85,7 +85,7 @@ h1 em { color: var(--lilac); font-weight: 500; }
 .about-seal { position: absolute; right: -34px; bottom: 28px; width: 148px; height: 148px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; border-radius: 50%; background: var(--lilac); color: white; text-align: center; box-shadow: 0 16px 36px rgba(105,75,113,.2); }
 .about-seal img { width: 36px; height: 38px; object-fit: contain; }
 .about-seal small { max-width: 94px; font-size: 9px; line-height: 1.5; letter-spacing: .13em; text-transform: uppercase; }
-.about-copy h2, .expertise-heading h2, .formats h2, .contact-copy h2 { margin: 0; font-family: var(--font-display), serif; font-weight: 500; letter-spacing: -.035em; line-height: 1.04; }
+.about-copy h2, .expertise-heading h2, .journey h2, .formats h2, .contact-copy h2 { margin: 0; font-family: var(--font-display), serif; font-weight: 500; letter-spacing: -.035em; line-height: 1.04; }
 .about-copy h2 { max-width: 610px; font-size: clamp(44px, 4.4vw, 65px); }
 .about-copy h2 em { color: var(--lilac); font-weight: 500; }
 .about-copy > p:not(.section-kicker) { max-width: 600px; margin: 24px 0 0; color: #6d696b; font-size: 15px; line-height: 1.85; }
@@ -106,6 +106,17 @@ h1 em { color: var(--lilac); font-weight: 500; }
 .credentials > p { margin: 4px 0 0; color: #746e74; font-family: var(--font-display), serif; font-size: 20px; }
 .credentials ul { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
 .credentials li { padding: 10px 14px; border: 1px solid rgba(72,70,71,.15); border-radius: 999px; font-size: 12px; background: rgba(255,255,255,.25); }
+
+.journey { padding: 122px 0 118px; display: grid; grid-template-columns: .78fr 1.22fr; gap: 105px; }
+.journey-heading h2 { max-width: 440px; font-size: clamp(45px, 4.3vw, 64px); }
+.journey-heading > p:not(.section-kicker) { max-width: 440px; margin: 24px 0 0; color: #777174; font-size: 14px; line-height: 1.75; }
+.journey-steps { position: relative; }
+.journey-steps::before { content: ""; position: absolute; left: 23px; top: 38px; bottom: 38px; width: 1px; background: var(--light-lilac); }
+.journey-steps article { position: relative; padding: 0 0 42px; display: grid; grid-template-columns: 48px 1fr; gap: 25px; }
+.journey-steps article:last-child { padding-bottom: 0; }
+.journey-steps article > span { position: relative; z-index: 1; width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid rgba(180,148,189,.45); border-radius: 50%; background: var(--cream); color: var(--lilac); font-family: var(--font-display), serif; font-size: 15px; }
+.journey-steps h3 { margin: 3px 0 9px; font-family: var(--font-display), serif; font-size: 26px; font-weight: 500; }
+.journey-steps p { max-width: 590px; margin: 0; color: #777174; font-size: 14px; line-height: 1.7; }
 
 .formats { padding: 122px 0 128px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 105px; }
 .formats h2 { max-width: 430px; font-size: clamp(45px, 4.3vw, 64px); }
@@ -136,12 +147,15 @@ h1 em { color: var(--lilac); font-weight: 500; }
 .pre-contact-form .consent-field { margin-top: 20px; flex-direction: row; align-items: flex-start; gap: 10px; }
 .consent-field input { width: 17px; height: 17px; margin: 1px 0 0; accent-color: var(--lilac); }
 .consent-field span { font-weight: 400 !important; line-height: 1.5; }
+.consent-field a { color: #765d7c; text-decoration: underline; text-underline-offset: 3px; }
 .form-footer { margin-top: 27px; padding-top: 26px; border-top: 1px solid rgba(72,70,71,.1); display: flex; align-items: center; justify-content: space-between; gap: 35px; }
 .form-footer p { max-width: 560px; margin: 0; color: #817b7e; font-size: 11px; line-height: 1.55; }
 .form-footer button { flex: 0 0 auto; padding: 16px 20px 16px 24px; border: 0; border-radius: 999px; background: var(--lilac); color: white; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; box-shadow: 0 14px 30px rgba(105,75,113,.16); }
 .form-footer button span { margin-left: 16px; font-size: 17px; }
 .form-footer button:hover { background: #a780b2; }
 .form-footer button:disabled { opacity: .65; cursor: wait; }
+.emergency-note { margin-top: 24px; padding: 17px 20px; border: 1px solid rgba(180,148,189,.3); border-radius: 14px; background: rgba(245,242,237,.58); color: #6d676a; font-size: 12px; line-height: 1.65; }
+.emergency-note strong { color: var(--ink); }
 
 .faq { padding: 120px 0 128px; display: grid; grid-template-columns: .82fr 1.18fr; gap: 105px; }
 .faq-heading { align-self: start; position: sticky; top: 40px; }
@@ -169,7 +183,22 @@ footer { width: min(1180px, calc(100% - 48px)); min-height: 145px; margin: 0 aut
 .footer-brand { width: 168px; }
 .footer-brand img { width: 100%; height: auto; display: block; }
 footer p { margin: 0; color: #777174; font-size: 12px; text-align: center; }
-footer > a:last-child { justify-self: end; font-size: 12px; }
+.footer-links { justify-self: end; display: flex; align-items: center; gap: 20px; font-size: 12px; }
+.footer-links a:first-child { color: #756d72; text-decoration: underline; text-underline-offset: 3px; }
+
+.floating-contact { position: fixed; z-index: 30; right: 24px; bottom: 22px; padding: 11px 17px 11px 12px; display: flex; align-items: center; gap: 9px; border: 1px solid rgba(255,255,255,.56); border-radius: 999px; background: var(--lilac); color: white; font-size: 12px; font-weight: 600; box-shadow: 0 14px 34px rgba(72,70,71,.22); transition: transform .2s, background .2s; }
+.floating-contact:hover { transform: translateY(-2px); background: #a780b2; }
+.floating-contact img { width: 24px; height: 25px; object-fit: contain; }
+
+.privacy-page { min-height: 100vh; overflow: visible; padding-bottom: 100px; }
+.privacy-header { width: min(900px, calc(100% - 48px)); height: 104px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.privacy-content { width: min(760px, calc(100% - 48px)); margin: 74px auto 0; }
+.privacy-content h1 { max-width: 720px; font-size: clamp(48px, 6.2vw, 74px); }
+.privacy-intro { max-width: 680px; margin: 28px 0 48px; color: #6d696b; font-size: 17px; line-height: 1.75; }
+.privacy-content section { padding: 28px 0; border-top: 1px solid rgba(72,70,71,.14); }
+.privacy-content section h2 { margin: 0 0 12px; font-family: var(--font-display), serif; font-size: 28px; font-weight: 500; }
+.privacy-content section p { margin: 0; color: #716b6e; font-size: 14px; line-height: 1.8; }
+.privacy-content .emergency-note { margin: 26px 0 34px; }
 
 @media (max-width: 860px) {
   .site-header { height: 86px; width: min(100% - 32px, 680px); }
@@ -189,7 +218,7 @@ footer > a:last-child { justify-self: end; font-size: 12px; }
   .about { grid-template-columns: 1fr; gap: 75px; padding: 110px 0; }
   .about-images { width: min(500px, 92%); min-height: 500px; margin: 0 auto; }
   .about-seal { right: -35px; }
-  .expertise-heading, .formats { grid-template-columns: 1fr; gap: 36px; }
+  .expertise-heading, .journey, .formats { grid-template-columns: 1fr; gap: 36px; }
   .care-grid { grid-template-columns: 1fr; }
   .care-card { min-height: 245px; }
   .credentials { grid-template-columns: 1fr; gap: 20px; }
@@ -203,7 +232,9 @@ footer > a:last-child { justify-self: end; font-size: 12px; }
   .contact-photo { min-height: 540px; }
   .contact-copy { padding: 85px max(24px, calc((100vw - 680px) / 2)); }
   footer { width: min(100% - 36px, 680px); grid-template-columns: 1fr; justify-items: center; padding: 42px 0; text-align: center; }
-  footer > a:last-child { justify-self: center; }
+  .footer-links { justify-self: center; }
+  .privacy-header { height: 86px; width: min(100% - 32px, 680px); }
+  .privacy-content { width: min(100% - 36px, 680px); margin-top: 52px; }
 }
 
 @media (max-width: 520px) {
@@ -227,6 +258,7 @@ footer > a:last-child { justify-self: end; font-size: 12px; }
   .care-card { min-height: 260px; padding: 27px; }
   .credentials ul { gap: 8px; }
   .credentials li { font-size: 11px; }
+  .journey { padding: 88px 0; }
   .formats { padding: 88px 0; }
   .pre-contact { padding: 88px 0; }
   .pre-contact-form { padding: 24px 18px; border-radius: 18px; }
@@ -238,6 +270,9 @@ footer > a:last-child { justify-self: end; font-size: 12px; }
   .contact-photo { min-height: 420px; }
   .contact-copy { padding: 72px 24px; }
   .contact-copy h2 { font-size: 48px; }
+  .floating-contact { right: 14px; bottom: 14px; padding: 10px 14px 10px 10px; }
+  .floating-contact span { font-size: 11px; }
+  .privacy-content h1 { font-size: 47px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

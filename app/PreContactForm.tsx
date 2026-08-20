@@ -98,7 +98,10 @@ export default function PreContactForm() {
 
       <label className="consent-field">
         <input type="checkbox" required />
-        <span>Entendo que estas informações serão enviadas à Paola pelo WhatsApp.</span>
+        <span>
+          Entendo que estas informações serão enviadas à Paola pelo WhatsApp e li o{" "}
+          <a href="/privacidade">aviso de privacidade</a>.
+        </span>
       </label>
 
       <div className="form-footer">
