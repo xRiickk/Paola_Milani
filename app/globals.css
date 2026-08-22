@@ -182,7 +182,11 @@ h1 em { color: var(--lilac); font-weight: 500; }
 footer { width: min(1180px, calc(100% - 48px)); min-height: 145px; margin: 0 auto; display: grid; grid-template-columns: .8fr 1.4fr .8fr; align-items: center; gap: 30px; }
 .footer-brand { width: 168px; }
 .footer-brand img { width: 100%; height: auto; display: block; }
+.footer-meta { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
 footer p { margin: 0; color: #777174; font-size: 12px; text-align: center; }
+.footer-meta a { color: #8f699a; font-size: 11px; letter-spacing: .03em; text-decoration: none; transition: color .2s; }
+.footer-meta a:hover { color: #694b71; }
+.footer-meta strong { font-weight: 600; }
 .footer-links { justify-self: end; display: flex; align-items: center; gap: 20px; font-size: 12px; }
 .footer-links a:first-child { color: #756d72; text-decoration: underline; text-underline-offset: 3px; }
 

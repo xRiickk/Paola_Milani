@@ -267,7 +267,12 @@ export default function Home() {
         <a className="footer-brand" href="#inicio">
           <Image src="/paola/logo-paola.png" alt="Paola Milani Psicóloga" width={2001} height={599} />
         </a>
-        <p>Psicologia infantojuvenil • Atendimento presencial e on-line</p>
+        <div className="footer-meta">
+          <p>Psicologia infantojuvenil • Atendimento presencial e on-line</p>
+          <a href="https://apollundev.com" target="_blank" rel="noopener noreferrer">
+            Site criado por <strong>Apollun</strong>
+          </a>
+        </div>
         <div className="footer-links">
           <a href="/privacidade">Privacidade</a>
           <a href="#inicio">Voltar ao início ↑</a>
