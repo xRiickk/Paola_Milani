@@ -19,7 +19,7 @@ export default function Home() {
 
       <section className="hero" id="inicio">
         <div className="hero-copy">
-          <p className="eyebrow"><span /> Psicologia infantojuvenil</p>
+          <p className="eyebrow"><span /> Psicóloga infantojuvenil</p>
           <h1>Um espaço seguro para <em>crescer, sentir</em> e se descobrir.</h1>
           <p className="hero-text">
             Acolhimento psicológico para crianças, adolescentes e suas famílias,
@@ -91,6 +91,16 @@ export default function Home() {
             emoções e construir, junto com cada um, caminhos mais leves, seguros e
             possíveis.
           </p>
+          <div className="school-experience">
+            <p>Experiência em instituições de ensino</p>
+            <ul aria-label="Instituições de ensino em que Paola Milani trabalhou">
+              <li>Colégio Marista Arquidiocesano</li>
+              <li>Colégio Madre Alix</li>
+              <li>Colégio Mater Dei</li>
+              <li>Maple Bear</li>
+              <li>Colégio Pentágono</li>
+            </ul>
+          </div>
           <blockquote>
             “Quando aprendemos a entender o que sentimos, tudo começa a fazer mais sentido.”
           </blockquote>
@@ -135,7 +145,7 @@ export default function Home() {
               <li>Alfabetização e Letramento</li>
               <li>Clínica Analítico-Comportamental</li>
               <li>Transtorno do Espectro Autista</li>
-              <li>Terapia Cognitivo-Comportamental</li>
+              <li>Terapia Cognitivo-Comportamental da Infância e da Adolescência</li>
             </ul>
           </div>
         </div>
@@ -158,8 +168,8 @@ export default function Home() {
           <article>
             <span>02</span>
             <div>
-              <h3>Conversa inicial</h3>
-              <p>A Paola conhece a necessidade da criança ou do adolescente e orienta sobre formato, disponibilidade e próximos passos.</p>
+              <h3>Anamnese com os pais</h3>
+              <p>Em uma conversa com os responsáveis, a Paola conhece a história, as necessidades e o contexto da criança ou do adolescente.</p>
             </div>
           </article>
           <article>

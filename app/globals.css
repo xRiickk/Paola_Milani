@@ -89,6 +89,10 @@ h1 em { color: var(--lilac); font-weight: 500; }
 .about-copy h2 { max-width: 610px; font-size: clamp(44px, 4.4vw, 65px); }
 .about-copy h2 em { color: var(--lilac); font-weight: 500; }
 .about-copy > p:not(.section-kicker) { max-width: 600px; margin: 24px 0 0; color: #6d696b; font-size: 15px; line-height: 1.85; }
+.school-experience { max-width: 600px; margin-top: 27px; padding-top: 23px; border-top: 1px solid rgba(72,70,71,.12); }
+.school-experience > p { margin: 0 0 13px; color: #746e74; font-family: var(--font-display), serif; font-size: 18px; }
+.school-experience ul { margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.school-experience li { padding: 8px 11px; border: 1px solid rgba(180,148,189,.3); border-radius: 999px; background: rgba(233,223,238,.38); color: #706a6e; font-size: 11px; }
 .about-copy blockquote { margin: 30px 0 0; padding: 8px 0 8px 25px; max-width: 540px; border-left: 2px solid var(--light-lilac); color: #706470; font-family: var(--font-display), serif; font-size: 21px; font-style: italic; line-height: 1.35; }
 
 .expertise { padding: 120px 0; background: #e9dfee; }
