@@ -256,9 +256,20 @@ export default function Home() {
           <p className="section-kicker">Vamos conversar?</p>
           <h2>Todo cuidado começa com um primeiro passo.</h2>
           <p>Se você sente que este pode ser o momento de buscar apoio, estou aqui para acolher e orientar sua família.</p>
-          <a className="primary-cta light" href="#pre-contato">
-            Iniciar primeiro contato <span aria-hidden="true">↑</span>
-          </a>
+          <div className="contact-actions">
+            <a className="primary-cta light" href="#pre-contato">
+              Iniciar primeiro contato <span aria-hidden="true">↑</span>
+            </a>
+            <a
+              className="instagram-cta"
+              href="https://www.instagram.com/psi.paolamilani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Acessar o Instagram da Paola Milani"
+            >
+              Instagram <span aria-hidden="true">↗</span>
+            </a>
+          </div>
           <small>WhatsApp: (11) 98106-4533</small>
         </div>
       </section>
