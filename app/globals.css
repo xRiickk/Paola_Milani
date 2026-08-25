@@ -192,6 +192,7 @@ footer { width: min(1180px, calc(100% - 48px)); min-height: 145px; margin: 0 aut
 .footer-brand img { width: 100%; height: auto; display: block; }
 .footer-meta { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
 footer p { margin: 0; color: #777174; font-size: 12px; text-align: center; }
+.footer-crp { color: #777174; font-size: 11px; letter-spacing: .04em; }
 .footer-meta a { color: #8f699a; font-size: 11px; letter-spacing: .03em; text-decoration: none; transition: color .2s; }
 .footer-meta a:hover { color: #694b71; }
 .footer-meta strong { font-weight: 600; }

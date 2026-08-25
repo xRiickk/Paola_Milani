@@ -82,9 +82,9 @@ export default function Home() {
           <p className="section-kicker">Olá, eu sou a Paola</p>
           <h2>Cuidar das emoções também é uma forma de <em>crescer.</em></h2>
           <p>
-            Sou psicóloga clínica, formada pela Universidade Presbiteriana Mackenzie,
-            e pedagoga pelo Claretiano. Trabalhar com crianças e adolescentes é algo
-            que realmente amo.
+            Sou psicóloga clínica (CRP 06/132909), formada pela Universidade
+            Presbiteriana Mackenzie, e pedagoga pelo Claretiano. Trabalhar com crianças
+            e adolescentes é algo que realmente amo.
           </p>
           <p>
             Me encanta acompanhar suas descobertas, auxiliar na compreensão das
@@ -290,6 +290,7 @@ export default function Home() {
         </a>
         <div className="footer-meta">
           <p>Psicologia infantojuvenil • Atendimento presencial e on-line</p>
+          <span className="footer-crp">CRP 06/132909</span>
           <a href="https://apollundev.com" target="_blank" rel="noopener noreferrer">
             Site criado por <strong>Apollun</strong>
           </a>
