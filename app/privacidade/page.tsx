@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import ThemeToggle from "../ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Privacidade | Paola Milani",
@@ -13,7 +14,10 @@ export default function PrivacyPage() {
         <a className="brand" href="/" aria-label="Voltar ao site de Paola Milani">
           <Image src="/paola/logo-paola.png" alt="Paola Milani Psicóloga" width={2001} height={599} priority />
         </a>
-        <a className="header-cta" href="/">Voltar ao site</a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a className="header-cta" href="/">Voltar ao site</a>
+        </div>
       </header>
 
       <article className="privacy-content">

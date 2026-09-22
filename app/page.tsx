@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PreContactForm from "./PreContactForm";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
           <a href="#como-funciona">Como funciona</a>
           <a href="#duvidas">Dúvidas</a>
         </nav>
-        <a className="header-cta" href="#pre-contato">Fale comigo</a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a className="header-cta" href="#pre-contato">Fale comigo</a>
+        </div>
       </header>
 
       <section className="hero" id="inicio">
